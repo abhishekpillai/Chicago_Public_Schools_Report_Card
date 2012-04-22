@@ -1,5 +1,7 @@
 <h1><%= link_to @school.name, @school.link %></h1>
 
+<div class="hero-unit span8 well"><div id="chart" style="height:400px; width:750px;"></div></div>
+
 <div id="school_info" class="hero-unit well span3">
 	<p><b>Type:</b> <%= @school.school_type %></p>
 	<p><b>Address:</b> <br/><%= @school.street_address %><br/><%= @school.city %>, <%= @school.state %> <%= @school.zipcode %></p>
@@ -14,7 +16,7 @@
 
 <hr/>
 
-<div id="score_icon" class="hero-unit well span3">
+<div id="score_icon" class="hero-unit well span4">
 	<p><b>Safety:</b> <%= @school.safety_score %> | <%= @school.safety_icon %></p>
 		<p><b>Family Involvement:</b> <%= @school.family_involvement_score %> | <%= @school.family_involvement_icon %></p>
 		<p><b>Environment:</b> <%= @school.environment_score %> | <%= @school.environment_icon %></p>
@@ -24,7 +26,7 @@
 		<p><b>Parent Engagement:</b> <%= @school.parent_engagement_score %> | <%= @school.parent_engagement_icon %></p>
 </div>
 
-<div id="other_info" class="hero-unit well span3">
+<div id="other_info" class="hero-unit well span4">
 	<p><b>Avg Student Attendance:</b> <%= @school.average_student_attendance %></p>
 	<p><b>Rate of Misconducts (per 100):</b> <%= @school.rate_of_misconducts %></p>
 	<p><b>Avg Teacher Attendance:</b> <%= @school.average_teacher_attendance %></p>

@@ -1,18 +1,21 @@
 var chart;
+
 $(document).ready(function() {
 	chart = new Highcharts.Chart({
 		chart: {
-			renderTo: 'container',
+			renderTo: 'chart',
 			type: 'bar'
 		},
 		title: {
-			text: 'Historic World Population by Region'
+			text: 'Academic Performance Statistics'
 		},
 		subtitle: {
-			text: 'Source: Wikipedia.org'
+			text: 'Source: Data.CityOfChicago.org'
 		},
 		xAxis: {
-			categories: ['Africa', 'America', 'Asia', 'Europe', 'Oceania'],
+			categories: ['PK-2 Literacy', 'PK-2 Math', '3-5th Grade Level Math', '3-5th Grade Level Read', '3-5th Keep Pace Read', '3-5th Keep Pace Math',
+						'6-8th Grade Level Math', '6-8th Grade Level Read', '6-8th Keep Pace Read', '6-8th Keep Pace Math', '6-8th Explore Math', 
+						'6-8th Explore Read', 'Students Taking Algebra', 'Students Passing Algebra', '9th Grade Explore 2009', '9th Grade Explore 2010'],
 			title: {
 				text: null
 			}
@@ -20,7 +23,7 @@ $(document).ready(function() {
 		yAxis: {
 			min: 0,
 			title: {
-				text: 'Population (millions)',
+				text: 'Scores (varying scale)',
 				align: 'high'
 			}
 		},
@@ -59,7 +62,7 @@ $(document).ready(function() {
 			data: [133, 156, 947, 408, 6]
 		}, {
 			name: 'Year 2008',
-			data: [973, 914, 4054, 732, 34]
+			data: [973, 914, 405, 732, 34]
 		}]
 	});
 });
