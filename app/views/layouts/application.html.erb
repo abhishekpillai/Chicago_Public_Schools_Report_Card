@@ -1,26 +1,24 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Chicago Public Schools Report Card 2011-12</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCkdDWnvuhvDQcmN4AgJYgBE1UiEJSRubE&sensor=false"></script> 
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<title><%= content_for?(:title) ? yield(:title) : "ChicagoSchoolsReportCard" %></title>
+		<%= csrf_meta_tags %>
 
-  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	  <%= stylesheet_link_tag "application", :media => "all" %>
+		<%= javascript_include_tag "application" %>	
+
+	  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCkdDWnvuhvDQcmN4AgJYgBE1UiEJSRubE&sensor=false"></script> 
+		
+		<script src="/js/highcharts.js" type="text/javascript"></script>
+
+	</head>
 	
-	<%= csrf_meta_tags %>
-	
-</head>
-<body>
+	<body onload="initialize()">
 
-<%= yield %>
+    <%= yield %>
 
-  <!-- <input id="goToAddress" type="text" style="margin-left:5px; width:215px;" onkeypress="handleKeyPress(event, '#goToAddress')" name="goToAddress" value="City, Address, or Zip"> -->
-  <!-- <button type="button" onclick="checkAddress('#goToAddress');">Go</button> -->
-  
-  <!-- <button id="go_button">GO!</button> -->
-</div>
-
-
-</body>
+	</body>
 </html>

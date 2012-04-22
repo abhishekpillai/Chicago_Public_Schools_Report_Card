@@ -1,2 +1,35 @@
-<h1>Schools#show</h1>
-<p>Find me in app/views/schools/show.html.erb</p>
+<h1><%= link_to @school.name, @school.link %></h1>
+
+<div id="school_info" class="hero-unit well span3">
+	<p><b>Type:</b> <%= @school.school_type %></p>
+	<p><b>Address:</b> <br/><%= @school.street_address %><br/><%= @school.city %>, <%= @school.state %> <%= @school.zipcode %></p>
+	<p><b>Network Manager:</b> <%= @school.network_manager %></p>
+	<p><b>Collaborative Name:</b> <%= @school.collaborative_name %></p>
+	<p><b>Adequate Yearly Progress Made?:</b> <%= @school.yearly_progress_made %></p>
+	<p><b>Track Schedule:</b> <%= @school.track_schedule %></p>
+	<p><b>CPS Policy Performance Status:</b> <%= @school.cps_performance_policy_status %></p>
+	<p><b>CPS Policy Performance Level:</b>  <%= @school.cps_performance_policy_level %></p>
+	<p><b>Healthy Schools Certified?:</b> <%= @school.healthy_schools_certified %></p>
+</div>
+
+<hr/>
+
+<div id="score_icon" class="hero-unit well span3">
+	<p><b>Safety:</b> <%= @school.safety_score %> | <%= @school.safety_icon %></p>
+		<p><b>Family Involvement:</b> <%= @school.family_involvement_score %> | <%= @school.family_involvement_icon %></p>
+		<p><b>Environment:</b> <%= @school.environment_score %> | <%= @school.environment_icon %></p>
+		<p><b>Instruction:</b> <%= @school.instruction_score %> | <%= @school.instruction_icon %></p>
+		<p><b>Leaders:</b><%= @school.leaders_score %> | <%= @school.leaders_icon %></p>
+		<p><b>Teachers:</b> <%= @school.teachers_score %> | <%= @school.teachers_icon %></p>
+		<p><b>Parent Engagement:</b> <%= @school.parent_engagement_score %> | <%= @school.parent_engagement_icon %></p>
+</div>
+
+<div id="other_info" class="hero-unit well span3">
+	<p><b>Avg Student Attendance:</b> <%= @school.average_student_attendance %></p>
+	<p><b>Rate of Misconducts (per 100):</b> <%= @school.rate_of_misconducts %></p>
+	<p><b>Avg Teacher Attendance:</b> <%= @school.average_teacher_attendance %></p>
+	<p><b>Individualized Ed Program Compliance Rate:</b> <%= @school.individualized_education_program_compliance_rate %></p>
+</div>
+
+
+

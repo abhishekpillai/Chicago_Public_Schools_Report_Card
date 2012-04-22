@@ -3,9 +3,8 @@ ChicagoSchoolsReportCard::Application.routes.draw do
   root :to => 'schools#index'
 
   get "schools/index"
-
-  get "schools/show"
   get "schools/chart"
+  get "schools/:school_id" => 'schools#show'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
