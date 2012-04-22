@@ -1,4 +1,7 @@
 ChicagoSchoolsReportCard::Application.routes.draw do
+
+  root :to => 'schools#index'
+
   get "schools/index"
 
   get "schools/show"
