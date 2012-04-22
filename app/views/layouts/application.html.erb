@@ -4,9 +4,22 @@
   <title>ChicagoSchoolsReportCard</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script> 
+  <script type="text/javascript"> 
+    function initialize() {
+ 
+      var chicago = new google.maps.LatLng(41.8800, -87.6500);
+ 
+      map = new google.maps.Map(document.getElementById('map_canvas'), {
+        center: chicago,
+        zoom: 12,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      });
+	};
+  </script>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body style="margin:0px; padding:0px;" onload="initialize()">
 
 <%= yield %>
 

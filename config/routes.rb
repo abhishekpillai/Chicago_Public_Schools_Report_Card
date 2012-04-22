@@ -1,4 +1,8 @@
 ChicagoSchoolsReportCard::Application.routes.draw do
+  get "schools/index"
+
+  get "schools/show"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

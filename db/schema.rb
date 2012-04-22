@@ -11,12 +11,12 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120422124638) do
+ActiveRecord::Schema.define(:version => 20120422131815) do
 
   create_table "schools", :force => true do |t|
     t.string   "school_id"
     t.string   "name"
-    t.string   "type"
+    t.string   "school_type"
     t.string   "street_address"
     t.string   "city"
     t.string   "state"
