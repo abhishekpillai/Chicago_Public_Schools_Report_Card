@@ -10,13 +10,16 @@
   
   <%= csrf_meta_tags %>
 </head>
-<body onload="initialize()">
+<body>
 
 <%= yield %>
 
-<div id="navbox" >
-  Hello
+  <!-- <input id="goToAddress" type="text" style="margin-left:5px; width:215px;" onkeypress="handleKeyPress(event, '#goToAddress')" name="goToAddress" value="City, Address, or Zip"> -->
+  <!-- <button type="button" onclick="checkAddress('#goToAddress');">Go</button> -->
+  
+  <!-- <button id="go_button">GO!</button> -->
 </div>
+
 
 </body>
 </html>

@@ -1,10 +1,43 @@
 #navbox {
-  background-color: #FFF;
-  border: 1px solid #CCC;
-  top:35px;
-  height: 500px;
+  background-color: #DDD;
+  border: 2px solid #EEE;
+  top:50px;
+  height: 160px;
   right:50px;
   position:absolute;
-  width:410px;
+  width: 180px;
   z-index: 10000;
+}
+.inline{
+  overflow: hidden;
+  float: left;
+  display: inline;  
+}
+
+#eighty {
+  background-color: #1EF32C;
+  height: 20px;
+  width: 20px;
+  margin: 0px 20px;
+}
+
+#sixy_to_eighty {
+  background-color: #FEFF92;
+  height: 20px;
+  width: 20px;
+  margin: 0px 20px;
+}
+
+#sixy_and_below {
+  background-color: #FB585D;
+  height: 20px;
+  width: 20px;
+  margin: 0px 20px;
+}
+
+#eighty_text{
+}
+
+.title{
+  text-align: center;
 }

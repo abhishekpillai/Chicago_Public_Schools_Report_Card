@@ -4,4 +4,9 @@ class SchoolsController < ApplicationController
 
   def show
   end
+  
+  def charts
+    @schools = School.all
+    @school = School.first
+  end
 end
