@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120422075336) do
+ActiveRecord::Schema.define(:version => 20120422124638) do
 
   create_table "schools", :force => true do |t|
     t.string   "school_id"
@@ -89,6 +89,14 @@ ActiveRecord::Schema.define(:version => 20120422075336) do
     t.string   "location"
     t.datetime "created_at",                                       :null => false
     t.datetime "updated_at",                                       :null => false
+    t.integer  "sid"
+    t.string   "report_id"
+    t.integer  "position"
+    t.string   "record_created_at"
+    t.string   "created_meta"
+    t.string   "record_updated_at"
+    t.string   "updated_meta"
+    t.string   "meta"
   end
 
 end
