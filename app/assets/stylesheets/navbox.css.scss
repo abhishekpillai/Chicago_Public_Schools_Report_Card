@@ -1,38 +1,33 @@
-#navbox {
-  background-color: #FFF;
-  border: 1px solid #CCC;
-  top:35px;
-  height: 300px;
-  right:50px;
-  position:absolute;
-  width: 180px;
-  z-index: 10000;
-}
+
+
 .inline{
   overflow: hidden;
   float: left;
-  display: inline;  
+  display: inline;
 }
 
 #eighty {
   background-color: #1EF32C;
   height: 20px;
   width: 20px;
-  margin: 0px 20px;
+  margin-left: 15px;
+  margin-right: 3px;
 }
 
 #sixy_to_eighty {
   background-color: #FEFF92;
   height: 20px;
   width: 20px;
-  margin: 0px 20px;
+  margin-left: 15px;
+  margin-right: 3px;
 }
 
 #sixy_and_below {
   background-color: #FB585D;
   height: 20px;
   width: 20px;
-  margin: 0px 20px;
+  margin-left: 15px;
+  margin-right: 3px;
 }
 
 #eighty_text{
