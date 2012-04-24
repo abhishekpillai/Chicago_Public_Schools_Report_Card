@@ -1,7 +1,0 @@
-Visualize Chicago Public Schools Report Card data provided by Chicago's OpenCityData initiative.
-
-Our first time diving into Javascript, great learning experience
-
-check out v1 of the app, built in 30 hours during at Hackathon at University of Chicago: 
-
-WindyCitySchools.herokuapp.com
